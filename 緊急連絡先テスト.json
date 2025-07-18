@@ -1,0 +1,1670 @@
+{
+  "HeaderInfo": {
+    "AssemblyVersion": "1.4.9.1",
+    "BaseSiteId": 22303048,
+    "Server": "https://dple01.tokuyama.local:444",
+    "CreatorName": "恩田 守（管理者）",
+    "PackageTime": "2025-07-18T11:52:40.736157+09:00",
+    "Convertors": [
+      {
+        "SiteId": 22303048,
+        "SiteTitle": "緊急連絡先（ITSOL新宿通ビル）",
+        "ReferenceType": "Results",
+        "IncludeData": false
+      }
+    ],
+    "IncludeSitePermission": true,
+    "IncludeRecordPermission": true,
+    "IncludeColumnPermission": true,
+    "IncludeNotifications": true,
+    "IncludeReminders": true
+  },
+  "Sites": [
+    {
+      "TenantId": 1,
+      "SiteId": 22303048,
+      "Title": "緊急連絡先（ITSOL新宿通ビル）",
+      "SiteName": "",
+      "SiteGroupName": "",
+      "Body": "新規作成",
+      "GridGuide": "",
+      "EditorGuide": "＊当社はこの情報を『個人情報保護法』に基づき、適正に管理・使用します。また本人の承諾を得ずに第三者への提供は致しません。\n\n以下の目的で本人の個人情報および本人以外の緊急連絡先情報を利用します。\n? 災害発生時の安否確認\n? 事故や急病時の緊急連絡\n? 重要な業務連絡が必要な場合の連絡手段",
+      "CalendarGuide": "",
+      "CrosstabGuide": "",
+      "GanttGuide": "",
+      "BurnDownGuide": "",
+      "TimeSeriesGuide": "",
+      "AnalyGuide": "",
+      "KambanGuide": "",
+      "ImageLibGuide": "",
+      "ReferenceType": "Results",
+      "ParentId": 22302513,
+      "InheritPermission": 22303048,
+      "SiteSettings": {
+        "Version": 1.017,
+        "ReferenceType": "Results",
+        "GridView": 2,
+        "AllowViewReset": false,
+        "GridColumns": [
+          "Status",
+          "ClassA",
+          "ClassB",
+          "ClassC",
+          "ClassD",
+          "ClassE",
+          "ClassF",
+          "ClassG",
+          "ClassH",
+          "ClassI",
+          "UpdatedTime",
+          "DateA",
+          "DateC"
+        ],
+        "FilterColumns": [
+          "Status",
+          "ClassI",
+          "UpdatedTime"
+        ],
+        "EditorColumnHash": {
+          "General": [
+            "Status",
+            "DateA",
+            "DateC",
+            "_Section-1",
+            "ClassA",
+            "ClassB",
+            "ClassC",
+            "ClassD",
+            "ClassE",
+            "ClassF",
+            "ClassG",
+            "ClassH",
+            "ClassI",
+            "DateB",
+            "ClassJ",
+            "ClassK",
+            "DescriptionA",
+            "_Section-3",
+            "ClassL",
+            "ClassM",
+            "ClassN",
+            "ClassO",
+            "ClassP",
+            "ClassQ",
+            "DescriptionB",
+            "Title"
+          ]
+        },
+        "SectionLatestId": 3,
+        "Sections": [
+          {
+            "Id": 1,
+            "LabelText": "基本情報(本人)",
+            "AllowExpand": false,
+            "Expand": true
+          },
+          {
+            "Id": 3,
+            "LabelText": "本人以外の緊急連絡先",
+            "AllowExpand": false,
+            "Expand": true
+          }
+        ],
+        "TitleColumns": [
+          "Title",
+          "ClassA",
+          "ClassB"
+        ],
+        "HistoryColumns": [
+          "UpdatedTime",
+          "Status",
+          "ClassB",
+          "ClassD",
+          "ClassE",
+          "ClassF",
+          "ClassG",
+          "ClassH",
+          "ClassI",
+          "DescriptionA",
+          "ClassL",
+          "ClassM",
+          "ClassN",
+          "ClassO",
+          "ClassP",
+          "ClassQ",
+          "DescriptionB"
+        ],
+        "Columns": [
+          {
+            "ColumnName": "DateA",
+            "LabelText": "本人確認期限",
+            "GridFormat": "Ymd",
+            "EditorReadOnly": true
+          },
+          {
+            "ColumnName": "Status",
+            "LabelText": "本人確認状況",
+            "ChoicesText": "100,未確認,未,status-preparation\n900,確認済,済,status-closed",
+            "DefaultInput": "900",
+            "ValidateRequired": true
+          },
+          {
+            "ColumnName": "ClassA",
+            "LabelText": "社員番号",
+            "MessageWhenDuplicated": "すでにデータを作成しています。",
+            "EditorReadOnly": true
+          },
+          {
+            "ColumnName": "ClassB",
+            "LabelText": "氏名",
+            "ChoicesText": "[[Users]]",
+            "NoDuplication": true,
+            "MessageWhenDuplicated": "社員情報が既に登録されています。",
+            "EditorReadOnly": true,
+            "SearchType": "PartialMatch"
+          },
+          {
+            "ColumnName": "ClassC",
+            "LabelText": "ﾌﾘｶﾞﾅ",
+            "ValidateRequired": true,
+            "ClientRegexValidation": "^(?=^[ｦ-ﾟ]* [ｦ-ﾟ]*$)[ｦ-ﾟ ]+$",
+            "ServerRegexValidation": "^(?=^[ｦ-ﾟ]* [ｦ-ﾟ]*$)[ｦ-ﾟ ]+$",
+            "RegexValidationMessage": "半角カナ(半角スペース必須)で入力してください。"
+          },
+          {
+            "ColumnName": "ClassD",
+            "LabelText": "現住所〒",
+            "InputGuide": "例）123-4567",
+            "NoWrap": true,
+            "ValidateRequired": true,
+            "ClientRegexValidation": "^\\d{3}-\\d{4}$",
+            "ServerRegexValidation": "^\\d{3}-\\d{4}$",
+            "RegexValidationMessage": "入力形式に誤りがあります。"
+          },
+          {
+            "ColumnName": "ClassE",
+            "LabelText": "現住所",
+            "InputGuide": "例）山口県周南市新宿通1丁目7番 新宿通りビル  ",
+            "ExtendedFieldCss": "tk-cm-field--double",
+            "ValidateRequired": true
+          },
+          {
+            "ColumnName": "ClassF",
+            "LabelText": "固定電話",
+            "InputGuide": "xxxx-xxxx-xxxx",
+            "NoWrap": true,
+            "ClientRegexValidation": "^\\d{2,4}-\\d{2,4}-\\d{3,4}$",
+            "ServerRegexValidation": "^\\d{2,4}-\\d{2,4}-\\d{3,4}$",
+            "RegexValidationMessage": "入力形式に誤りがあります。"
+          },
+          {
+            "ColumnName": "ClassG",
+            "LabelText": "携帯電話",
+            "InputGuide": "xxxx-xxxx-xxxx",
+            "ClientRegexValidation": "^\\d{2,4}-\\d{2,4}-\\d{3,4}$",
+            "ServerRegexValidation": "^\\d{2,4}-\\d{2,4}-\\d{3,4}$",
+            "RegexValidationMessage": "入力形式に誤りがあります。"
+          },
+          {
+            "ColumnName": "ClassH",
+            "LabelText": "公用携帯",
+            "InputGuide": "xxxx-xxxx-xxxx",
+            "ClientRegexValidation": "^\\d{2,4}-\\d{2,4}-\\d{3,4}$",
+            "ServerRegexValidation": "^\\d{2,4}-\\d{2,4}-\\d{3,4}$",
+            "RegexValidationMessage": "入力形式に誤りがあります。"
+          },
+          {
+            "ColumnName": "ClassI",
+            "LabelText": "緊急連絡先に掲載可",
+            "ChoicesText": "固定電話\n携帯電話\n公用携帯",
+            "MultipleSelections": true,
+            "ValidateRequired": true
+          },
+          {
+            "ColumnName": "DateB",
+            "LabelText": "生年月日",
+            "NoWrap": true,
+            "ValidateRequired": true
+          },
+          {
+            "ColumnName": "ClassJ",
+            "LabelText": "血液型",
+            "ChoicesText": "A\nB\nO\nAB\n不明",
+            "ValidateRequired": true,
+            "SearchType": "PartialMatch"
+          },
+          {
+            "ColumnName": "DescriptionA",
+            "LabelText": "備考",
+            "NoWrap": true,
+            "ExtendedFieldCss": "tk-cm-field--triple",
+            "FieldCss": "field-normal"
+          },
+          {
+            "ColumnName": "ClassO",
+            "LabelText": "住所",
+            "InputGuide": "例）山口県周南市新宿通1丁目7番 新宿通りビル",
+            "ExtendedFieldCss": " tk-cm-field--double",
+            "ValidateRequired": true
+          },
+          {
+            "ColumnName": "ClassK",
+            "LabelText": "性別",
+            "ChoicesText": "男性\n女性\n無回答",
+            "ValidateRequired": true,
+            "SearchType": "PartialMatch"
+          },
+          {
+            "ColumnName": "ClassL",
+            "LabelText": "氏名（本人以外）",
+            "ValidateRequired": true
+          },
+          {
+            "ColumnName": "ClassM",
+            "LabelText": "続柄",
+            "ValidateRequired": true
+          },
+          {
+            "ColumnName": "ClassN",
+            "LabelText": "住所〒",
+            "InputGuide": "例）123-4567",
+            "NoWrap": true,
+            "ValidateRequired": true,
+            "ClientRegexValidation": "^\\d{3}-\\d{4}$",
+            "ServerRegexValidation": "^\\d{3}-\\d{4}$",
+            "RegexValidationMessage": "入力形式に誤りがあります。"
+          },
+          {
+            "ColumnName": "ClassP",
+            "LabelText": "電話番号（固定）",
+            "InputGuide": "xxxx-xxxx-xxxx",
+            "NoWrap": true,
+            "ClientRegexValidation": "^\\d{2,4}-\\d{2,4}-\\d{3,4}$",
+            "ServerRegexValidation": "^\\d{2,4}-\\d{2,4}-\\d{3,4}$",
+            "RegexValidationMessage": "入力形式に誤りがあります。"
+          },
+          {
+            "ColumnName": "ClassQ",
+            "LabelText": "電話番号（携帯）",
+            "InputGuide": "xxxx-xxxx-xxxx",
+            "ClientRegexValidation": "^\\d{2,4}-\\d{2,4}-\\d{3,4}$",
+            "ServerRegexValidation": "^\\d{2,4}-\\d{2,4}-\\d{3,4}$",
+            "RegexValidationMessage": "入力形式に誤りがあります。"
+          },
+          {
+            "ColumnName": "DescriptionB",
+            "LabelText": "備考（その他）",
+            "NoWrap": true,
+            "ExtendedFieldCss": "tk-cm-field--triple",
+            "FieldCss": "field-normal"
+          },
+          {
+            "ColumnName": "Title",
+            "Hide": true,
+            "ValidateRequired": false
+          },
+          {
+            "ColumnName": "DateC",
+            "LabelText": "本人確認期限_周知日",
+            "GridFormat": "Ymd",
+            "Hide": true
+          },
+          {
+            "ColumnName": "Manager",
+            "ChoicesText": "",
+            "DefaultInput": "",
+            "SearchType": "ExactMatch"
+          },
+          {
+            "ColumnName": "Owner",
+            "ChoicesText": "",
+            "DefaultInput": "",
+            "SearchType": "ExactMatch"
+          },
+          {
+            "ColumnName": "UpdatedTime",
+            "GridFormat": "Ymdhm"
+          }
+        ],
+        "ViewLatestId": 6,
+        "Views": [
+          {
+            "Id": 1,
+            "Name": "管理者",
+            "ApiColumnKeyDisplayType": 0,
+            "ApiColumnValueDisplayType": 0,
+            "CalendarSiteId": 0,
+            "CalendarTimePeriod": "Monthly",
+            "CalendarFromTo": "DateA",
+            "CrosstabGroupByX": "Status",
+            "CrosstabGroupByY": "Status",
+            "CrosstabAggregateType": "Total",
+            "CrosstabTimePeriod": "Monthly",
+            "KambanAggregateType": "Count",
+            "Groups": [
+              3606,
+              3607,
+              1466
+            ],
+            "ApiDataType": 0
+          },
+          {
+            "Id": 2,
+            "Name": "一般ユーザ",
+            "GridColumns": [
+              "Status",
+              "ClassA",
+              "ClassB",
+              "ClassC",
+              "ClassD",
+              "ClassE",
+              "ClassF",
+              "ClassG",
+              "ClassH",
+              "ClassI",
+              "UpdatedTime",
+              "DateA"
+            ],
+            "BulkMoveTargetsCommand": 1,
+            "BulkDeleteCommand": 1,
+            "EditImportSettings": 1,
+            "OpenExportSelectorDialogCommand": 1,
+            "OpenBulkUpdateSelectorDialogCommand": 1,
+            "EditOnGridCommand": 1,
+            "ApiColumnKeyDisplayType": 0,
+            "ApiColumnValueDisplayType": 0,
+            "CalendarSiteId": 0,
+            "CalendarTimePeriod": "Monthly",
+            "CalendarFromTo": "DateA",
+            "CrosstabGroupByX": "Status",
+            "CrosstabGroupByY": "Status",
+            "CrosstabAggregateType": "Total",
+            "CrosstabTimePeriod": "Monthly",
+            "KambanAggregateType": "Count",
+            "ApiDataType": 0
+          },
+          {
+            "Id": 3,
+            "Name": "（開発者用）未確認のユーザ",
+            "FilterColumns": [
+              "Status",
+              "ClassA",
+              "ClassB",
+              "ClassC",
+              "UpdatedTime"
+            ],
+            "FiltersDisplayType": 1,
+            "AggregationsDisplayType": 1,
+            "BulkMoveTargetsCommand": 1,
+            "BulkDeleteCommand": 1,
+            "EditImportSettings": 1,
+            "OpenExportSelectorDialogCommand": 1,
+            "OpenBulkUpdateSelectorDialogCommand": 1,
+            "EditOnGridCommand": 2,
+            "ColumnFilterHash": {
+              "Status": "[\"100\"]"
+            },
+            "ApiColumnKeyDisplayType": 0,
+            "ApiColumnValueDisplayType": 0,
+            "CalendarSiteId": 0,
+            "CalendarTimePeriod": "Monthly",
+            "CalendarFromTo": "DateA",
+            "CrosstabGroupByX": "Status",
+            "CrosstabGroupByY": "Status",
+            "CrosstabAggregateType": "Total",
+            "CrosstabTimePeriod": "Monthly",
+            "KambanAggregateType": "Count",
+            "Groups": [
+              1466
+            ],
+            "ApiDataType": 0
+          },
+          {
+            "Id": 5,
+            "Name": "（開発者用）未確認のユーザ_周知日当日",
+            "FiltersDisplayType": 1,
+            "AggregationsDisplayType": 1,
+            "BulkMoveTargetsCommand": 1,
+            "BulkDeleteCommand": 1,
+            "EditImportSettings": 1,
+            "OpenExportSelectorDialogCommand": 1,
+            "OpenBulkUpdateSelectorDialogCommand": 1,
+            "EditOnGridCommand": 1,
+            "ColumnFilterHash": {
+              "DateC": "[\"Today\"]",
+              "Status": "[\"100\"]"
+            },
+            "ApiColumnKeyDisplayType": 0,
+            "ApiColumnValueDisplayType": 0,
+            "CalendarSiteId": 0,
+            "CalendarTimePeriod": "Monthly",
+            "CalendarFromTo": "DateA",
+            "CrosstabGroupByX": "Status",
+            "CrosstabGroupByY": "Status",
+            "CrosstabAggregateType": "Total",
+            "CrosstabTimePeriod": "Monthly",
+            "KambanAggregateType": "Count",
+            "Groups": [
+              1466
+            ],
+            "ApiDataType": 0
+          }
+        ],
+        "Notifications": [
+          {
+            "Type": 1,
+            "Prefix": "【緊急連絡先（ITSOL新宿通ビル）】",
+            "Address": "[ClassB]",
+            "Encoding": "utf-8",
+            "MediaType": "application/json",
+            "UseCustomFormat": true,
+            "Format": "社員情報が更新されました。\n\n{\"Name\":\"[ClassB]\",\"Delimiter\":\":\",\"Allow\":\" => \",\"Always\":true}\n{\"Name\":\"[ClassA]\"}\n{\"Name\":\"[ClassC]\"}\n{\"Name\":\"[ClassD]\"}\n{\"Name\":\"[ClassE]\"}\n{\"Name\":\"[ClassF]\"}\n{\"Name\":\"[ClassG]\"}\n{\"Name\":\"[ClassH]\"}\n{\"Name\":\"[ClassI]\"}\n{\"Name\":\"[ClassJ]\"}\n{\"Name\":\"[ClassK]\"}\n{\"Name\":\"[DescriptionA]\"}\n{\"Name\":\"[ClassL]\"}\n{\"Name\":\"[ClassM]\"}\n{\"Name\":\"[ClassN]\"}\n{\"Name\":\"[ClassO]\"}\n{\"Name\":\"[ClassP]\"}\n{\"Name\":\"[ClassQ]\"}\n{\"Name\":\"[DescriptionB]\"}\n\n{Url}",
+            "MonitorChangesColumns": [
+              "Status",
+              "ClassA",
+              "ClassB",
+              "ClassC",
+              "ClassD",
+              "ClassE",
+              "ClassF",
+              "ClassG",
+              "ClassH",
+              "ClassI",
+              "DateB",
+              "ClassJ",
+              "ClassK",
+              "DescriptionA",
+              "ClassL",
+              "ClassM",
+              "ClassN",
+              "ClassO",
+              "ClassP",
+              "ClassQ",
+              "DescriptionB"
+            ],
+            "BeforeCondition": 0,
+            "AfterCondition": 0,
+            "Expression": 1,
+            "AfterCreate": false,
+            "AfterDelete": false,
+            "AfterCopy": false,
+            "AfterBulkUpdate": false,
+            "AfterBulkDelete": false,
+            "AfterImport": false,
+            "Id": 1
+          },
+          {
+            "Type": 1,
+            "Prefix": "【緊急連絡先（ITSOL新宿通ビル）】管理者共有_",
+            "Address": "[Group3606]",
+            "Encoding": "utf-8",
+            "MediaType": "application/json",
+            "UseCustomFormat": true,
+            "Format": "社員情報が更新されました。\n\n{\"Name\":\"[ClassB]\",\"Delimiter\":\":\",\"Allow\":\" => \",\"Always\":true}\n{\"Name\":\"[ClassA]\"}\n{\"Name\":\"[ClassC]\"}\n{\"Name\":\"[ClassD]\"}\n{\"Name\":\"[ClassE]\"}\n{\"Name\":\"[ClassF]\"}\n{\"Name\":\"[ClassG]\"}\n{\"Name\":\"[ClassH]\"}\n{\"Name\":\"[ClassI]\"}\n{\"Name\":\"[ClassJ]\"}\n{\"Name\":\"[ClassK]\"}\n{\"Name\":\"[DescriptionA]\"}\n{\"Name\":\"[ClassL]\"}\n{\"Name\":\"[ClassM]\"}\n{\"Name\":\"[ClassN]\"}\n{\"Name\":\"[ClassO]\"}\n{\"Name\":\"[ClassP]\"}\n{\"Name\":\"[ClassQ]\"}\n{\"Name\":\"[DescriptionB]\"}\n\n{Url}",
+            "MonitorChangesColumns": [
+              "ClassA",
+              "ClassB",
+              "ClassC",
+              "ClassD",
+              "ClassE",
+              "ClassF",
+              "ClassG",
+              "ClassH",
+              "ClassI",
+              "DateB",
+              "ClassJ",
+              "ClassK",
+              "DescriptionA",
+              "ClassL",
+              "ClassM",
+              "ClassN",
+              "ClassO",
+              "ClassP",
+              "ClassQ",
+              "DescriptionB"
+            ],
+            "BeforeCondition": 0,
+            "AfterCondition": 0,
+            "Expression": 1,
+            "AfterCreate": false,
+            "AfterDelete": false,
+            "AfterCopy": false,
+            "AfterBulkUpdate": false,
+            "AfterBulkDelete": false,
+            "AfterImport": false,
+            "Id": 5
+          },
+          {
+            "Type": 1,
+            "Prefix": "【緊急連絡先（ITSOL新宿通ビル）】",
+            "Address": "[ClassB]",
+            "Encoding": "utf-8",
+            "MediaType": "application/json",
+            "UseCustomFormat": true,
+            "Format": "社員情報が作成されました。\n\n{Url}",
+            "MonitorChangesColumns": [
+              "Status",
+              "ClassA",
+              "ClassB",
+              "ClassC",
+              "ClassD",
+              "ClassE",
+              "ClassF",
+              "ClassG",
+              "ClassH",
+              "ClassI",
+              "DateB",
+              "ClassJ",
+              "ClassK",
+              "DescriptionA",
+              "ClassL",
+              "ClassM",
+              "ClassN",
+              "ClassO",
+              "ClassP",
+              "ClassQ",
+              "DescriptionB"
+            ],
+            "BeforeCondition": 0,
+            "AfterCondition": 0,
+            "Expression": 1,
+            "AfterUpdate": false,
+            "AfterDelete": false,
+            "AfterCopy": false,
+            "AfterBulkUpdate": false,
+            "AfterBulkDelete": false,
+            "AfterImport": false,
+            "Id": 6
+          },
+          {
+            "Type": 1,
+            "Prefix": "【緊急連絡先（ITSOL新宿通ビル）】管理者共有_",
+            "Address": "[Group3606]",
+            "Encoding": "utf-8",
+            "MediaType": "application/json",
+            "UseCustomFormat": true,
+            "Format": "社員情報が作成されました。\n\n{Url}",
+            "MonitorChangesColumns": [
+              "ClassA",
+              "ClassB",
+              "ClassC",
+              "ClassD",
+              "ClassE",
+              "ClassF",
+              "ClassG",
+              "ClassH",
+              "ClassI",
+              "DateB",
+              "ClassJ",
+              "ClassK",
+              "DescriptionA",
+              "ClassL",
+              "ClassM",
+              "ClassN",
+              "ClassO",
+              "ClassP",
+              "ClassQ",
+              "DescriptionB"
+            ],
+            "BeforeCondition": 0,
+            "AfterCondition": 0,
+            "Expression": 1,
+            "AfterUpdate": false,
+            "AfterDelete": false,
+            "AfterCopy": false,
+            "AfterBulkUpdate": false,
+            "AfterBulkDelete": false,
+            "AfterImport": false,
+            "Id": 7
+          }
+        ],
+        "Reminders": [
+          {
+            "ReminderType": 1,
+            "Subject": "【緊急連絡先（ITSOL新宿通ビル）】登録内容の確認をお願いします",
+            "Body": "リンクを開き、登録内容を最新化してください。\n変更のない方は、本人確認状況を「確認済」にして更新してください。\n変更のある方は内容を修正し、本人確認状況を「確認済」にして更新してください。\n\n締切日：[[Records]]",
+            "Line": "[ClassB] ([ClassC])",
+            "From": "",
+            "To": "[ClassB]",
+            "Token": "",
+            "Column": "DateA",
+            "StartDateTime": "2025-06-01T14:13:00",
+            "Type": 10,
+            "Range": 3,
+            "NotSendIfNotApplicable": true,
+            "Condition": 3,
+            "Id": 1
+          },
+          {
+            "ReminderType": 1,
+            "Subject": "【緊急連絡先（ITSOL新宿通ビル）】管理者共有_未確認社員のリストを送ります",
+            "Body": "現在「本人確認」が未実施となっている社員のリストです。\nご確認のうえ、必要に応じて対応をお願いいたします。\n\n[[Records]]",
+            "Line": " [ClassA][ClassB]",
+            "From": "",
+            "To": "[Group3606]",
+            "Token": "",
+            "Column": "DateA",
+            "StartDateTime": "2025-06-01T06:00:00",
+            "Type": 10,
+            "Range": 3,
+            "NotSendIfNotApplicable": true,
+            "Condition": 3,
+            "Id": 2
+          },
+          {
+            "ReminderType": 1,
+            "Subject": "【緊急連絡先（ITSOL新宿通ビル）】登録内容の確認をお願いします",
+            "Body": "リンクを開き、登録内容を最新化してください。\n変更のない方は、本人確認状況を「確認済」にして更新してください。\n変更のある方は内容を修正し、本人確認状況を「確認済」にして更新してください。\n\n締切日：[[Records]]",
+            "Line": "[ClassB]([ClassC])",
+            "From": "",
+            "To": "[ClassB]",
+            "Token": "",
+            "Column": "DateA",
+            "StartDateTime": "2025-06-01T06:00:00",
+            "Type": 10,
+            "Range": 99,
+            "NotSendIfNotApplicable": true,
+            "Condition": 5,
+            "Id": 3
+          }
+        ],
+        "Exports": [
+          {
+            "Name": "労働者連絡先名簿データ",
+            "Columns": [
+              {
+                "Id": 1,
+                "ColumnName": "Status"
+              },
+              {
+                "Id": 2,
+                "ColumnName": "ClassA"
+              },
+              {
+                "Id": 3,
+                "ColumnName": "ClassB"
+              },
+              {
+                "Id": 4,
+                "ColumnName": "ClassC"
+              },
+              {
+                "Id": 5,
+                "ColumnName": "ClassK"
+              },
+              {
+                "Id": 6,
+                "ColumnName": "DateB"
+              },
+              {
+                "Id": 7,
+                "ColumnName": "ClassJ"
+              },
+              {
+                "Id": 8,
+                "ColumnName": "ClassD"
+              },
+              {
+                "Id": 9,
+                "ColumnName": "ClassE"
+              },
+              {
+                "Id": 10,
+                "ColumnName": "ClassF"
+              },
+              {
+                "Id": 11,
+                "ColumnName": "ClassG"
+              },
+              {
+                "Id": 12,
+                "ColumnName": "ClassH"
+              },
+              {
+                "Id": 13,
+                "ColumnName": "ClassI"
+              },
+              {
+                "Id": 14,
+                "ColumnName": "DescriptionA"
+              },
+              {
+                "Id": 15,
+                "ColumnName": "ClassL"
+              },
+              {
+                "Id": 16,
+                "ColumnName": "ClassM"
+              },
+              {
+                "Id": 17,
+                "ColumnName": "ClassN"
+              },
+              {
+                "Id": 18,
+                "ColumnName": "ClassO"
+              },
+              {
+                "Id": 19,
+                "ColumnName": "ClassP"
+              },
+              {
+                "Id": 20,
+                "ColumnName": "ClassQ"
+              },
+              {
+                "Id": 21,
+                "ColumnName": "DescriptionB"
+              }
+            ],
+            "Type": 0,
+            "DelimiterType": 0,
+            "ExecutionType": 0,
+            "Id": 1
+          }
+        ],
+        "ServerScripts": [
+          {
+            "Title": "社員番号・氏名の自動入力",
+            "Name": "",
+            "BeforeOpeningPage": true,
+            "Body": "try{\n    // 新規作成の時のみ実行\n    if ( context.Action === 'new' ) {\n        // 通常、新規作成時は全項目がサーバに送信されるが、読取専用項目は対象外\n        // スクリプトで初期値をセットした読取専用項目も登録するにはこの記述が必要\n        // 参考マニュアル：https://pleasanter.org/ja/manual/faq-set-value\n        columns.ClassA.ExtendedControlCss=\"always-send\";        // 社員番号\n        columns.ClassB.ExtendedControlCss=\"always-send\";         // 氏名\n        model.ClassA = context.UserId; //社員番号\n        model.ClassB = context.UserId; //氏名\n    }\n}catch(e){\n    context.Log(e.stack);\n}",
+            "Id": 1
+          },
+          {
+            "Title": "本人確認期限の10日前設定",
+            "Name": "",
+            "BeforeUpdate": true,
+            "Body": "// 内容：本人確認期限を更新したタイミングで本人確認期限_周知の日付をその10日前に設定する\n// 補足：条件は更新前\ntry {\n    // 旧値と新値を取得\n    const oldDateObj = saved.DateA ? saved.DateA : null;\n    const newDateObj = model.DateA ? model.DateA : null;\n//    context.Log('saved[\"本人確認期限\"]=' + saved.DateA + ' / model[\"本人確認期限\"]=' + model.DateA);\n\n    if (oldDateObj !== newDateObj ) {\n        if (newDateObj) {\n            const notice = new Date(newDateObj);\n            notice.setDate(notice.getDate() - 10);  // 周知日を10日前に設定\n            model.DateC = notice;\n        } else {\n            // 本人確認期限をクリアした時は周知日もクリア\n            model.DateC = null;\n        }\n    }\n} catch (e) {\n    context.Log(e.stack);\n}",
+            "Id": 3
+          },
+          {
+            "Title": "電話番号の入力チェック",
+            "Name": "",
+            "BeforeCreate": true,
+            "BeforeUpdate": true,
+            "Body": "try {\n    var phone1 = model.ClassF; // 固定電話の入力\n    var phone2 = model.ClassG; // 携帯電話の入力\n    var phone3 = model.ClassH; // 公用携帯の入力\n\n\n    var phone4 = model.ClassP; // 電話番号(固定)の入力\n    var phone5 = model.ClassQ; // 電話番号(携帯)の入力\n\n\n    var selections = model.ClassI || []; // 複数選択プルダウン（分類I）\n\n    // 1. 入力がすべて空ならエラー\n    if (!phone1 && !phone2 && !phone3) {\n        context.Error('固定電話、携帯電話、公用携帯のいずれかを入力してください。');\n    }\n　 if (!phone4 && !phone5) {\n        context.Error('電話番号(固定)、電話番号(携帯)のいずれかを入力してください。');\n    }\n\n//     2. 入力があるのに、対応する分類が選ばれていない場合\n//    if (phone1 && !selections.includes('固定電話')) {\n//       context.Error('固定電話が入力されていますが、プルダウンで「固定電話」が選択されていません。');\n//   }\n//    if (phone2 && !selections.includes('携帯電話')) {\n//       context.Error('携帯電話が入力されていますが、プルダウンで「携帯電話」が選択されていません。');\n//   }\n//  if (phone3 && !selections.includes('公用携帯')) {\n//      context.Error('公用携帯が入力されていますが、プルダウンで「公用携帯」が選択されていません。');\n//   }\n\n    // 3. 分類で選択されているのに、対応する入力がない場合\n    if (selections.includes('固定電話') && !phone1) {\n        context.Error('「固定電話」がプルダウンで選択されていますが、入力がありません。');\n    }\n    if (selections.includes('携帯電話') && !phone2) {\n        context.Error('「携帯電話」がプルダウンで選択されていますが、入力がありません。');\n    }\n    if (selections.includes('公用携帯') && !phone3) {\n        context.Error('「公用携帯」がプルダウンで選択されていますが、入力がありません。');\n    }\n\n} catch (e) {\n    context.Log(e.stack);\n}",
+            "Id": 4
+          }
+        ],
+        "BulkUpdateColumns": [
+          {
+            "Title": "本人確認期限",
+            "Columns": [
+              "Status",
+              "DateA"
+            ],
+            "Details": {
+              "DateA": {
+                "ValidateRequired": true,
+                "EditorReadOnly": false,
+                "DefaultInput": ""
+              },
+              "Status": {
+                "ValidateRequired": true,
+                "EditorReadOnly": false,
+                "DefaultInput": "100"
+              }
+            },
+            "Id": 1
+          }
+        ],
+        "EnableCalendar": false,
+        "EnableCrosstab": false,
+        "EnableTimeSeries": false,
+        "EnableAnaly": false,
+        "EnableKamban": false,
+        "EnableImageLib": false,
+        "UseNegativeFilters": true,
+        "UseIncompleteFilter": false,
+        "UseOwnFilter": false,
+        "UseNearCompletionTimeFilter": false,
+        "UseDelayFilter": false,
+        "UseOverdueFilter": false,
+        "NoDisplayIfReadOnly": false,
+        "PermissionForCreating": {
+          "ClassB": 5
+        },
+        "PermissionForUpdating": {
+          "ClassB": 5
+        }
+      },
+      "Publish": false,
+      "DisableCrossSearch": false,
+      "Comments": []
+    }
+  ],
+  "Data": [],
+  "Permissions": [
+    {
+      "SiteId": 22303048,
+      "Permissions": [
+        {
+          "ReferenceId": 22303048,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 99906,
+          "PermissionType": 511
+        },
+        {
+          "ReferenceId": 22303048,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 99920,
+          "PermissionType": 511
+        },
+        {
+          "ReferenceId": 22303048,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 99921,
+          "PermissionType": 511
+        },
+        {
+          "ReferenceId": 22303048,
+          "DeptId": 0,
+          "GroupId": 3371,
+          "UserId": 0,
+          "PermissionType": 2
+        },
+        {
+          "ReferenceId": 22303048,
+          "DeptId": 0,
+          "GroupId": 3535,
+          "UserId": 0,
+          "PermissionType": 2
+        },
+        {
+          "ReferenceId": 22303048,
+          "DeptId": 0,
+          "GroupId": 3606,
+          "UserId": 0,
+          "PermissionType": 47
+        },
+        {
+          "ReferenceId": 22303048,
+          "DeptId": 0,
+          "GroupId": 3607,
+          "UserId": 0,
+          "PermissionType": 47
+        },
+        {
+          "ReferenceId": 22311379,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12971,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311380,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12749,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311381,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12992,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311382,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12803,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311383,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12941,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311384,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12688,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311385,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12429,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311386,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12699,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311388,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 10003,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311389,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 5397,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311390,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12674,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311393,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12679,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311394,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 5356,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311395,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 2993,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311396,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12438,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311397,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12750,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311398,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12695,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311399,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12683,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311400,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12687,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311401,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12685,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311402,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 5358,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311403,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12673,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311404,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12676,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311405,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12684,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311406,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 5381,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311407,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12682,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311408,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 3784,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311409,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12892,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311410,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12792,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311411,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12697,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311412,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12680,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311413,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 3104,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311414,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12691,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311415,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 5374,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311417,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 3574,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311418,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 5352,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311419,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12576,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311420,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 11748,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311421,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12700,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311422,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 11966,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311424,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12904,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311425,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12681,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311426,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 5459,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311427,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12698,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311428,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 11124,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311429,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12690,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311430,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12670,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311431,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 5360,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311432,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 3610,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311434,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 3247,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311435,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12669,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311436,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12168,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311437,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12692,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311438,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 10212,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311439,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12274,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311440,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 3194,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311441,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12788,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311442,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 5389,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311443,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 5461,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311444,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 10946,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311445,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12686,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311446,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 3619,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311447,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12834,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311448,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12696,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311449,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 10214,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311450,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12672,
+          "PermissionType": 5
+        },
+        {
+          "ReferenceId": 22311451,
+          "DeptId": 0,
+          "GroupId": 0,
+          "UserId": 12436,
+          "PermissionType": 5
+        }
+      ]
+    }
+  ],
+  "PermissionIdList": {
+    "DeptIdList": [],
+    "GroupIdList": [
+      {
+        "GroupId": 1466,
+        "GroupName": "999999_システム管理者"
+      },
+      {
+        "GroupId": 3371,
+        "GroupName": "ＩＴソリューショングループ"
+      },
+      {
+        "GroupId": 3535,
+        "GroupName": "デジタル統括本部徳山"
+      },
+      {
+        "GroupId": 3606,
+        "GroupName": "100361_緊急連絡先_主管理者"
+      },
+      {
+        "GroupId": 3607,
+        "GroupName": "100362_緊急連絡先_準管理者"
+      }
+    ],
+    "UserIdList": [
+      {
+        "UserId": 12681,
+        "LoginId": "a.fukue.of@tokuyamagr.com"
+      },
+      {
+        "UserId": 12274,
+        "LoginId": "a.miyake.qe@tokuyamagr.com"
+      },
+      {
+        "UserId": 10212,
+        "LoginId": "a.mizuno.no@tokuyamagr.com"
+      },
+      {
+        "UserId": 12670,
+        "LoginId": "f.furukawa.gs@tokuyamagr.com"
+      },
+      {
+        "UserId": 12436,
+        "LoginId": "f.yoshioka.3n@tokuyamagr.com"
+      },
+      {
+        "UserId": 12697,
+        "LoginId": "g.tanaka.op@tokuyamagr.com"
+      },
+      {
+        "UserId": 11124,
+        "LoginId": "h.fujita.st@tokuyamagr.com"
+      },
+      {
+        "UserId": 10003,
+        "LoginId": "h.kanehira.zd@tokuyamagr.com"
+      },
+      {
+        "UserId": 5356,
+        "LoginId": "h.kawamoto.of@tokuyamagr.com"
+      },
+      {
+        "UserId": 5360,
+        "LoginId": "h.maesaka.ub@tokuyamagr.com"
+      },
+      {
+        "UserId": 12788,
+        "LoginId": "h.mukunoki.ub@tokuyamagr.com"
+      },
+      {
+        "UserId": 12684,
+        "LoginId": "h.sugimura.4a@tokuyamagr.com"
+      },
+      {
+        "UserId": 11966,
+        "LoginId": "j.hara.z0@tokuyamagr.com"
+      },
+      {
+        "UserId": 12168,
+        "LoginId": "j.miura.2j@tokuyamagr.com"
+      },
+      {
+        "UserId": 12576,
+        "LoginId": "k.hayashi.mb@tokuyamagr.com"
+      },
+      {
+        "UserId": 12992,
+        "LoginId": "k.iwasaki.pn@tokuyamagr.com"
+      },
+      {
+        "UserId": 5397,
+        "LoginId": "k.kamatari.ji@tokuyamagr.com"
+      },
+      {
+        "UserId": 12688,
+        "LoginId": "k.okada.ab@tokuyamagr.com"
+      },
+      {
+        "UserId": 12687,
+        "LoginId": "k.sasaki.ab@tokuyamagr.com"
+      },
+      {
+        "UserId": 12892,
+        "LoginId": "k.takahashi.x4@tokuyamagr.com"
+      },
+      {
+        "UserId": 12792,
+        "LoginId": "k.takiyama.cm@tokuyamagr.com"
+      },
+      {
+        "UserId": 12691,
+        "LoginId": "k.tsuchida.cw@tokuyamagr.com"
+      },
+      {
+        "UserId": 12698,
+        "LoginId": "m.fujii.em@tokuyamagr.com"
+      },
+      {
+        "UserId": 12695,
+        "LoginId": "m.komatsu.sg@tokuyamagr.com"
+      },
+      {
+        "UserId": 5374,
+        "LoginId": "m.nakagawa.d5@tokuyamagr.com"
+      },
+      {
+        "UserId": 12676,
+        "LoginId": "m.shouya.k8@tokuyamagr.com"
+      },
+      {
+        "UserId": 2993,
+        "LoginId": "n.kunisawa.cd@tokuyamagr.com"
+      },
+      {
+        "UserId": 12680,
+        "LoginId": "n.tanaka.dk@tokuyamagr.com"
+      },
+      {
+        "UserId": 99921,
+        "LoginId": "nakamura_admin"
+      },
+      {
+        "UserId": 99920,
+        "LoginId": "onda_admin"
+      },
+      {
+        "UserId": 12700,
+        "LoginId": "r.hayata.dw@tokuyamagr.com"
+      },
+      {
+        "UserId": 12750,
+        "LoginId": "r.koda.8g@tokuyamagr.com"
+      },
+      {
+        "UserId": 12692,
+        "LoginId": "r.miki.ka@tokuyamagr.com"
+      },
+      {
+        "UserId": 10946,
+        "LoginId": "r.morino.b5@tokuyamagr.com"
+      },
+      {
+        "UserId": 12699,
+        "LoginId": "r.ochi.sf@tokuyamagr.com"
+      },
+      {
+        "UserId": 3784,
+        "LoginId": "r.takase.ei@tokuyamagr.com"
+      },
+      {
+        "UserId": 12682,
+        "LoginId": "s.akita.cd@tokuyamagr.com"
+      },
+      {
+        "UserId": 12904,
+        "LoginId": "s.fukamachi.2k@tokuyamagr.com"
+      },
+      {
+        "UserId": 11748,
+        "LoginId": "s.hayashi.31@tokuyamagr.com"
+      },
+      {
+        "UserId": 12749,
+        "LoginId": "s.ito.z7@tokuyamagr.com"
+      },
+      {
+        "UserId": 12438,
+        "LoginId": "s.kurisu.c9@tokuyamagr.com"
+      },
+      {
+        "UserId": 12669,
+        "LoginId": "s.matsumura.x6@tokuyamagr.com"
+      },
+      {
+        "UserId": 5461,
+        "LoginId": "s.morigami.96@tokuyamagr.com"
+      },
+      {
+        "UserId": 12429,
+        "LoginId": "s.okamura.ea@tokuyamagr.com"
+      },
+      {
+        "UserId": 12941,
+        "LoginId": "s.otsubo.gb@tokuyamagr.com"
+      },
+      {
+        "UserId": 12683,
+        "LoginId": "s.sakiyama.g5@tokuyamagr.com"
+      },
+      {
+        "UserId": 12673,
+        "LoginId": "s.shimada.ij@tokuyamagr.com"
+      },
+      {
+        "UserId": 3104,
+        "LoginId": "s.tanizaki.s6@tokuyamagr.com"
+      },
+      {
+        "UserId": 10214,
+        "LoginId": "s.yamamoto.eb@tokuyamagr.com"
+      },
+      {
+        "UserId": 12696,
+        "LoginId": "s.yamashita.gm@tokuyamagr.com"
+      },
+      {
+        "UserId": 3619,
+        "LoginId": "s.yano.jl@tokuyamagr.com"
+      },
+      {
+        "UserId": 12971,
+        "LoginId": "t.ando.r9@tokuyamagr.com"
+      },
+      {
+        "UserId": 12686,
+        "LoginId": "t.morimoto.ef@tokuyamagr.com"
+      },
+      {
+        "UserId": 5389,
+        "LoginId": "t.motomori.t7@tokuyamagr.com"
+      },
+      {
+        "UserId": 5358,
+        "LoginId": "t.shigeoka.9w@tokuyamagr.com"
+      },
+      {
+        "UserId": 12834,
+        "LoginId": "t.yamagata.gt@tokuyamagr.com"
+      },
+      {
+        "UserId": 99906,
+        "LoginId": "TESTUSER04"
+      },
+      {
+        "UserId": 12690,
+        "LoginId": "y.fujimoto.jk@tokuyamagr.com"
+      },
+      {
+        "UserId": 5459,
+        "LoginId": "y.fukushima.o1@tokuyamagr.com"
+      },
+      {
+        "UserId": 12674,
+        "LoginId": "y.kamibayashi.rx@tokuyamagr.com"
+      },
+      {
+        "UserId": 12679,
+        "LoginId": "y.kawano.zt@tokuyamagr.com"
+      },
+      {
+        "UserId": 3610,
+        "LoginId": "y.maeda.ij@tokuyamagr.com"
+      },
+      {
+        "UserId": 3247,
+        "LoginId": "y.masunaka.hf@tokuyamagr.com"
+      },
+      {
+        "UserId": 3194,
+        "LoginId": "y.miyake.no@tokuyamagr.com"
+      },
+      {
+        "UserId": 3574,
+        "LoginId": "y.nakamura.ab@tokuyamagr.com"
+      },
+      {
+        "UserId": 5352,
+        "LoginId": "y.naramatsu.fy@tokuyamagr.com"
+      },
+      {
+        "UserId": 12685,
+        "LoginId": "y.sadanaga.uh@tokuyamagr.com"
+      },
+      {
+        "UserId": 5381,
+        "LoginId": "y.sugimura.wy@tokuyamagr.com"
+      },
+      {
+        "UserId": 12803,
+        "LoginId": "y.usui.ak@tokuyamagr.com"
+      },
+      {
+        "UserId": 12672,
+        "LoginId": "y.yamamoto.pq@tokuyamagr.com"
+      }
+    ]
+  }
+}
